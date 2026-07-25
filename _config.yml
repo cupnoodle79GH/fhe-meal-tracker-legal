@@ -1,0 +1,8 @@
+title: FHE's Meal Tracker
+description: Privacy and support information for FHE's Meal Tracker
+theme: minima
+header_pages:
+  - privacy/index.md
+  - support/index.md
+github:
+  is_project_page: true
