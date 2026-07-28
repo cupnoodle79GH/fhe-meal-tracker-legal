@@ -6,10 +6,11 @@ permalink: /support/
 
 # FHE's Meal Tracker Support
 
-**Last updated: 25 July 2026**
+**Last updated: 28 July 2026**
 
 - **Support email:** cupnoodle79@gmail.com
 - **Privacy Policy:** https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/privacy/
+- **Terms of Use:** https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/terms/
 
 ## Contact support
 
@@ -24,6 +25,30 @@ Please include:
 - A screenshot, if it does not reveal information you do not want to share.
 
 Do not send your password, authentication code, OpenAI key, Supabase secret, or complete medical records.
+
+## Quick user guide
+
+### 1. Finish setup
+
+After signing in, review the Terms and Privacy Policy, then complete the guided profile questionnaire. Paid plan features may require the Current & Goals setup before Capture, Today, and Progress are available.
+
+### 2. Analyse a meal
+
+Open **Capture**, tap the photo area, and take or select up to three photographs of the same meal. Add brief notes only when useful, such as “no sauce” or “ate half.” Select **Analyse meal** and wait for the review screen.
+
+### 3. Review before saving
+
+Check the description, date, time, meal type, nutrition estimate, clarification, and Meal Coach result. You can amend the description, date, time, and meal type. If the food identification needs correction, enter a correction and regenerate. Saved nutrition values are estimates.
+
+If you remove or replace a photograph after analysis, FHE requires a new analysis before saving. Select **Confirm and save** only when satisfied. A saved meal is read-only, but it can be deleted.
+
+### 4. Review Today and Progress
+
+**Today** compares only today's saved meals with today's targets and lists older meals separately. **Progress**, when included in your plan, displays weight and nutrition trends. Features vary by subscription tier.
+
+### 5. Plans and purchases
+
+Open the plan card in **Settings** to view available plans. Apple displays the final localized price before purchase. Use **Restore purchases** if an active purchase is not recognized. Manage or cancel renewals in Apple Account subscription settings.
 
 ## Common questions
 
@@ -41,13 +66,21 @@ Check that you are using the correct email address. Use **Forgot password** on t
 
 ### I want a copy of my data
 
-Open **Settings → Profile → Account & Privacy**, then choose **Export My Data**. The exported file contains account-related application data. Private photograph links in an export may expire for security.
+Open **Settings → Profile → Account & privacy**, then choose **Export my account data**. The exported file contains account-related application data. Private photograph links in an export may expire for security.
 
 ### I want to delete my account
 
-Open **Settings → Profile → Account & Privacy**, then choose **Delete Account**. Follow the confirmation steps. Account deletion is permanent and includes your FHE profile, meals, weights, goals, photographs, saved meal locations, progress records, and local FHE cache, except information that must be retained by law.
+Open **Settings → Profile → Account & privacy**, then choose **Delete account**. Enter your current password and type `DELETE` when prompted. Account deletion is permanent and includes your FHE profile, meals, weights, goals, photographs, saved meal locations, progress records, subscription profile, and local FHE cache, except information that must be retained by law.
 
-If subscriptions are introduced later, deleting the FHE account will not automatically cancel an Apple subscription. Subscriptions must also be managed through the Apple Account subscription settings.
+Deleting the FHE account does not automatically cancel an Apple subscription. Cancel the subscription through Apple Account subscription settings if you do not want it to renew.
+
+After deletion finishes, you may create a new FHE account using the same email address. The new account starts without the deleted FHE data. An Apple subscription may still be restorable if it remains active.
+
+If deletion reports that a photograph could not be removed, your account remains active and other records are not deleted. Try once more on a stable connection. If it still fails, contact support with the app version, build number, and approximate time.
+
+### What is the difference between a user guide and release notes?
+
+This Support page is the current user guide: it explains how the app works. Release notes describe only what changed in a particular version. Current release notes are provided with beta builds and App Store updates.
 
 ### How do I report a privacy or security concern?
 
@@ -58,6 +91,12 @@ Email **cupnoodle79@gmail.com** with the subject **Privacy request** or **Securi
 Read the FHE's Meal Tracker Privacy Policy at:
 
 **https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/privacy/**
+
+## Terms
+
+Read the FHE's Meal Tracker Terms of Use at:
+
+**https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/terms/**
 
 ## Important health notice
 

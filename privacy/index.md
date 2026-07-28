@@ -6,7 +6,9 @@ permalink: /privacy/
 
 # FHE's Meal Tracker Privacy Policy
 
-**Effective date: 25 July 2026**
+**Effective date: 28 July 2026**
+
+**Policy version: 2026-07-28**
 
 This Privacy Policy explains how FHE's Meal Tracker ("FHE", "we", "us", or "our") collects, uses, stores, and shares personal data when you use the FHE's Meal Tracker mobile application and related services.
 
@@ -47,8 +49,12 @@ If you turn on **Save photo location**, the app may store latitude and longitude
 
 ### Technical and security information
 
-- App version, build number, account identifier, consent status, and limited API-usage records used for security, abuse prevention, and service limits.
+- App version, build number, account identifier, consent status, Terms and Privacy acknowledgement versions and timestamps, and limited API-usage records used for security, abuse prevention, and service limits.
 - Apple, TestFlight, hosting, or infrastructure providers may provide technical diagnostics such as crash or service logs under their own terms.
+
+### Subscription information
+
+If subscriptions are enabled, we process your plan or entitlement, product identifier, subscription expiry status, and related Apple transaction information needed to unlock paid features, restore purchases, provide customer support, and prevent misuse. FHE does not receive your complete payment-card details.
 
 FHE does not use third-party advertising trackers and does not sell personal data.
 
@@ -88,6 +94,7 @@ We use service providers to operate FHE. Depending on the feature, personal data
 - **Supabase** for authentication, database hosting, and private photograph storage.
 - **Render** for the hosted FHE application programming interface.
 - **OpenAI** for cloud AI analysis that you request and consent to.
+- **RevenueCat** for subscription entitlements, purchase restoration, and subscription-status management.
 - **Expo** for application build and delivery services.
 - **Apple** for iOS, App Store, TestFlight, and related diagnostics.
 
@@ -103,7 +110,9 @@ Some providers may process or store data outside Singapore. Where applicable, we
 
 We use access controls, authenticated requests, private storage, encrypted network connections, row-level database security, per-account data separation, and operational safeguards designed to protect user data.
 
-Your account data is generally retained while your account is active and while it is needed to provide the service. When you complete in-app account deletion, FHE deletes the account and associated application records, including profile, meals, weights, goals, photographs, saved location records, progress records, and the app's local FHE cache, except where retention is required by law or necessary to establish, exercise, or defend legal claims.
+Your account data is generally retained while your account is active and while it is needed to provide the service. When you complete in-app account deletion, FHE deletes the account and associated application records, including profile, meals, weights, goals, photographs, saved location records, progress records, AI-usage records, subscription entitlement records, the associated RevenueCat customer profile, and the app's local FHE cache, except where retention is required by law or necessary to establish, exercise, or defend legal claims.
+
+Deleting your FHE account does not cancel an Apple subscription. You must cancel an active subscription through your Apple Account if you do not want it to renew. If you later reinstall the app or restore an Apple purchase, Apple and RevenueCat may create a new subscription record as needed to validate that purchase.
 
 Limited residual information may remain temporarily in provider backups or security logs until it expires under the applicable provider's retention cycle.
 
@@ -131,8 +140,10 @@ We may update this policy as the service changes. We will update the date at the
 
 ## 11. Contact
 
-**Operator:** Gabriel Yap Beng Chih  
-**Location:** Singapore  
+**Operator:** Gabriel Yap Beng Chih
+
+**Location:** Singapore
+
 **Privacy contact / Data Protection Officer:** cupnoodle79@gmail.com
 
 For general help, use the public FHE Support page linked from App Settings.
