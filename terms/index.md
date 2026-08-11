@@ -6,9 +6,9 @@ permalink: /terms/
 
 # FHE's Meal Tracker Terms of Use
 
-**Effective date: 28 July 2026**
+**Effective date: 11 August 2026**
 
-**Terms version: 2026-07-28**
+**Terms version: 2026-08-11**
 
 These Terms of Use ("Terms") govern your use of the FHE's Meal Tracker mobile application and related services ("FHE" or the "Service"). The Service is operated by **Gabriel Yap Beng Chih** in Singapore ("we", "us", or "our").
 
@@ -16,7 +16,7 @@ By creating an account, selecting **Agree and continue**, or using the Service, 
 
 ## 1. Eligibility and account security
 
-You must be at least 13 years old to use FHE. If you are below the age at which you can independently consent to these Terms where you live, a parent or legal guardian must agree for you.
+You must be at least 18 years old to create an account or use FHE. By creating an account, you confirm that you are at least 18.
 
 You must provide accurate account information, protect your password and device, and promptly tell us if you believe your account has been compromised. You are responsible for activity performed through your account unless applicable law provides otherwise.
 
@@ -28,13 +28,13 @@ Subject to these Terms, we grant you a limited, personal, non-exclusive, non-tra
 
 ## 3. Important nutrition and health limitations
 
-FHE's photograph analysis, nutrition values, targets, coaching, and other AI-generated content are estimates. They can be incomplete, outdated, or wrong. FHE is not a medical device and does not provide medical advice, diagnosis, treatment, emergency assistance, or medication recommendations.
+FHE's photograph analysis, nutrition values, targets, coaching, and other AI-generated content are estimates. They can be incomplete, outdated, or wrong. FHE is intended only for general well-being purposes and to encourage or maintain a healthy lifestyle. It is not intended for any medical purpose and is not a medical device. FHE does not provide medical advice, diagnosis, monitoring, management, treatment, emergency assistance, or medication recommendations.
 
-You must review information before relying on it. Do not use FHE as a substitute for a qualified healthcare professional, particularly if you are pregnant, under medical care, managing allergies or an eating disorder, or have a condition affected by diet. Seek appropriate professional or emergency help when needed.
+You must review information before relying on it. Do not use FHE to determine whether food is safe to eat: it cannot reliably identify ingredients, allergens, contamination, or food safety risks. Do not use FHE as a substitute for a qualified healthcare professional, particularly if you are pregnant, under medical care, managing allergies or an eating disorder, or have a condition affected by diet. Seek appropriate professional or emergency help when needed.
 
 ## 4. Photographs, notes, and other user content
 
-You retain ownership of the photographs, notes, corrections, profile information, and other content you submit ("User Content"). You give us a limited licence to host, copy, process, transmit, resize, and display User Content only as needed to operate, secure, support, and improve the Service in accordance with the Privacy Policy.
+You retain ownership of the photographs, notes, corrections, profile information, and other content you submit ("User Content"). You give us a limited, non-exclusive licence to host, copy, process, transmit, resize, and display User Content only as needed to provide, secure, troubleshoot, and support the Service in accordance with the Privacy Policy. This licence ends when the relevant User Content is deleted from our active systems, subject to lawful retention and temporary provider backups.
 
 You confirm that you have the necessary rights and permissions for User Content you submit. Do not submit illegal content, content that infringes another person's rights, or another person's sensitive information without authority.
 

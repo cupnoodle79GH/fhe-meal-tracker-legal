@@ -6,9 +6,9 @@ permalink: /privacy/
 
 # FHE's Meal Tracker Privacy Policy
 
-**Effective date: 28 July 2026**
+**Effective date: 11 August 2026**
 
-**Policy version: 2026-07-28**
+**Policy version: 2026-08-11**
 
 This Privacy Policy explains how FHE's Meal Tracker ("FHE", "we", "us", or "our") collects, uses, stores, and shares personal data when you use the FHE's Meal Tracker mobile application and related services.
 
@@ -47,6 +47,11 @@ Passwords are handled by our authentication provider. FHE does not store your pa
 
 If you turn on **Save photo location**, the app may store latitude and longitude from a selected photograph's metadata or from your phone when a photograph is taken. This feature is off by default and can be turned off in App Settings.
 
+The service decodes and re-encodes uploaded meal photographs before cloud
+storage or analysis. This removes embedded EXIF/GPS and camera metadata from the
+stored file. If you separately enable Save photo location, the app reads the
+location on your device and saves the coordinates as part of the meal record.
+
 ### Technical and security information
 
 - App version, build number, account identifier, consent status, Terms and Privacy acknowledgement versions and timestamps, and limited API-usage records used for security, abuse prevention, and service limits.
@@ -72,7 +77,7 @@ We use personal data to:
 - Respond to support, privacy, and security requests.
 - Comply with applicable legal obligations.
 
-FHE's estimates and coaching are informational only. They may be incomplete or inaccurate and are not medical advice, diagnosis, or treatment. Consult a qualified healthcare professional for medical or dietary decisions.
+FHE is intended only for general well-being purposes and to encourage or maintain a healthy lifestyle. Its estimates and coaching may be incomplete or inaccurate and are not medical advice, diagnosis, monitoring, management, or treatment. Do not use FHE to determine whether food is safe to eat or free of an ingredient or allergen. Consult a qualified healthcare professional for medical or dietary decisions.
 
 ## 4. AI processing and your choices
 
@@ -112,6 +117,11 @@ We use access controls, authenticated requests, private storage, encrypted netwo
 
 Your account data is generally retained while your account is active and while it is needed to provide the service. When you complete in-app account deletion, FHE deletes the account and associated application records, including profile, meals, weights, goals, photographs, saved location records, progress records, AI-usage records, subscription entitlement records, the associated RevenueCat customer profile, and the app's local FHE cache, except where retention is required by law or necessary to establish, exercise, or defend legal claims.
 
+Photographs uploaded for analysis but not saved as a meal are treated as
+temporary drafts and enter routine deletion after 24 hours. Cleanup may complete
+later if the service is unavailable or a storage provider temporarily rejects
+the deletion.
+
 Deleting your FHE account does not cancel an Apple subscription. You must cancel an active subscription through your Apple Account if you do not want it to renew. If you later reinstall the app or restore an Apple purchase, Apple and RevenueCat may create a new subscription record as needed to validate that purchase.
 
 Limited residual information may remain temporarily in provider backups or security logs until it expires under the applicable provider's retention cycle.
@@ -128,11 +138,11 @@ Inside the app you can:
 - Export a machine-readable copy of your account data.
 - Permanently delete your account and associated FHE data.
 
-You may also contact us to ask about access, correction, withdrawal of consent, or a privacy concern. We may need to verify your identity before fulfilling a request.
+You may also contact us to ask about access, correction, withdrawal of consent, or a privacy concern. We may need to verify your identity before fulfilling a request. We aim to respond within 30 calendar days. If more time is reasonably required, we will tell you in writing when we expect to respond, subject to applicable law. Withdrawing consent may prevent us from continuing to provide a feature that requires the affected data.
 
-## 9. Children
+## 9. Age requirement
 
-FHE is not directed to children under 13, and we do not knowingly collect personal data from children under 13. If you believe a child has provided personal data, contact us so that we can investigate and take appropriate action.
+FHE is intended only for people aged 18 or older. We do not knowingly permit children to create accounts. If you believe a person under 18 has provided personal data, contact us so that we can investigate and take appropriate action, including deletion where appropriate.
 
 ## 10. Changes to this policy
 

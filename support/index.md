@@ -6,7 +6,7 @@ permalink: /support/
 
 # FHE's Meal Tracker Support
 
-**Last updated: 28 July 2026**
+**Last updated: 11 August 2026**
 
 - **Support email:** cupnoodle79@gmail.com
 - **Privacy Policy:** https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/privacy/
@@ -30,7 +30,7 @@ Do not send your password, authentication code, OpenAI key, Supabase secret, or 
 
 ### 1. Finish setup
 
-After signing in, review the Terms and Privacy Policy, then complete the guided profile questionnaire. Paid plan features may require the Current & Goals setup before Capture, Today, and Progress are available.
+FHE is intended only for people aged 18 or older. After signing in, review the Terms and Privacy Policy, then complete the guided profile questionnaire. Paid plan features may require the Current & Goals setup before Capture, Today, and Progress are available.
 
 ### 2. Analyse a meal
 
@@ -100,4 +100,4 @@ Read the FHE's Meal Tracker Terms of Use at:
 
 ## Important health notice
 
-FHE provides informational nutrition estimates and general coaching. It is not a medical device and does not provide medical advice, diagnosis, or treatment. For urgent medical concerns, contact an appropriate healthcare professional or local emergency service.
+FHE is intended only for general well-being and healthy-lifestyle purposes. It is not a medical device and does not provide medical advice, diagnosis, monitoring, management, or treatment. It cannot determine whether food is safe to eat or free of an ingredient or allergen. For medical or urgent concerns, contact an appropriate healthcare professional or local emergency service.
