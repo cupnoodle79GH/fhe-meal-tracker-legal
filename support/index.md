@@ -8,13 +8,13 @@ permalink: /support/
 
 **Last updated: 11 August 2026**
 
-- **Support email:** cupnoodle79@gmail.com
-- **Privacy Policy:** https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/privacy/
-- **Terms of Use:** https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/terms/
+- **Support email:** support@fhemealtracker.com
+- **Privacy Policy:** https://fhemealtracker.com/privacy/
+- **Terms of Use:** https://fhemealtracker.com/terms/
 
 ## Contact support
 
-For help with FHE's Meal Tracker, email **cupnoodle79@gmail.com**.
+For help with FHE's Meal Tracker, email **support@fhemealtracker.com**.
 
 Please include:
 
@@ -84,19 +84,19 @@ This Support page is the current user guide: it explains how the app works. Rele
 
 ### How do I report a privacy or security concern?
 
-Email **cupnoodle79@gmail.com** with the subject **Privacy request** or **Security report**. Do not include sensitive information beyond what is necessary to explain the concern.
+Email **privacy@fhemealtracker.com** with the subject **Privacy request** or **Security report**. Do not include sensitive information beyond what is necessary to explain the concern.
 
 ## Privacy
 
 Read the FHE's Meal Tracker Privacy Policy at:
 
-**https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/privacy/**
+**https://fhemealtracker.com/privacy/**
 
 ## Terms
 
 Read the FHE's Meal Tracker Terms of Use at:
 
-**https://cupnoodle79gh.github.io/fhe-meal-tracker-legal/terms/**
+**https://fhemealtracker.com/terms/**
 
 ## Important health notice
 

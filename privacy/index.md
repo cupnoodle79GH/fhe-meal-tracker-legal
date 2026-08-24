@@ -13,7 +13,7 @@ permalink: /privacy/
 This Privacy Policy explains how FHE's Meal Tracker ("FHE", "we", "us", or "our") collects, uses, stores, and shares personal data when you use the FHE's Meal Tracker mobile application and related services.
 
 - **Operator:** Gabriel Yap Beng Chih
-- **Privacy contact / Data Protection Officer:** cupnoodle79@gmail.com
+- **Privacy contact / Data Protection Officer:** privacy@fhemealtracker.com
 
 ## 1. Scope
 
@@ -154,6 +154,6 @@ We may update this policy as the service changes. We will update the date at the
 
 **Location:** Singapore
 
-**Privacy contact / Data Protection Officer:** cupnoodle79@gmail.com
+**Privacy contact / Data Protection Officer:** privacy@fhemealtracker.com
 
 For general help, use the public FHE Support page linked from App Settings.
