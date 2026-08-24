@@ -106,6 +106,6 @@ These Terms are governed by the laws of Singapore, without limiting any mandator
 
 **Location:** Singapore
 
-**Email:** cupnoodle79@gmail.com
+**Email:** support@fhemealtracker.com
 
 For help, use the Support link in FHE Settings.
