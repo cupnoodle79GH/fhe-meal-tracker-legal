@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>FHE security check</title>
+    <style>
+      :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #fff9f4; color: #29423a; }
+      main { width: min(360px, calc(100% - 40px)); text-align: center; }
+      h1 { font-size: 24px; margin: 0 0 10px; }
+      p { color: #718079; line-height: 1.5; }
+      #turnstile { display: flex; justify-content: center; min-height: 70px; margin-top: 24px; }
+    </style>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Quick security check</h1>
+      <p>This helps protect FHE accounts from automated sign-in and email abuse.</p>
+      <div id="turnstile" aria-live="polite"></div>
+      <p id="status">Preparing verification…</p>
+    </main>
+    <script>
+      const status = document.getElementById('status');
+      const sitekey = new URLSearchParams(location.search).get('sitekey');
+      const send = (payload) => window.ReactNativeWebView?.postMessage(JSON.stringify(payload));
+
+      const renderChallenge = () => {
+        if (!sitekey) {
+          status.textContent = 'Verification is not configured. Please return to the app.';
+          send({ type: 'turnstile-error', code: 'missing-site-key' });
+          return;
+        }
+        if (!window.turnstile) {
+          setTimeout(renderChallenge, 100);
+          return;
+        }
+        status.textContent = 'Complete the check below.';
+        window.turnstile.render('#turnstile', {
+          sitekey,
+          theme: 'light',
+          callback: (token) => {
+            status.textContent = 'Verified. Returning to FHE…';
+            send({ type: 'turnstile-token', token });
+          },
+          'expired-callback': () => {
+            status.textContent = 'The check expired. Please try again.';
+            send({ type: 'turnstile-expired' });
+          },
+          'error-callback': (code) => {
+            status.textContent = 'The check could not load. Please try again.';
+            send({ type: 'turnstile-error', code });
+          }
+        });
+      };
+      renderChallenge();
+    </script>
+  </body>
+</html>
