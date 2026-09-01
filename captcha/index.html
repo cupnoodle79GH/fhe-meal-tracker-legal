@@ -12,6 +12,7 @@
       h1 { font-size: 24px; margin: 0 0 10px; }
       p { color: #718079; line-height: 1.5; }
       #turnstile-widget { display: flex; justify-content: center; min-height: 70px; margin-top: 24px; }
+      #retry { display: none; margin: 16px auto 0; padding: 12px 22px; border: 1px solid #29423a; border-radius: 12px; background: #fff; color: #29423a; font: inherit; font-weight: 700; }
     </style>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
   </head>
@@ -21,11 +22,30 @@
       <p>This helps protect FHE accounts from automated sign-in and email abuse.</p>
       <div id="turnstile-widget" aria-live="polite"></div>
       <p id="status">Preparing verification…</p>
+      <button id="retry" type="button">Try again</button>
     </main>
     <script>
       const status = document.getElementById('status');
+      const retry = document.getElementById('retry');
       const sitekey = new URLSearchParams(location.search).get('sitekey');
       const send = (payload) => window.ReactNativeWebView?.postMessage(JSON.stringify(payload));
+      let widgetId;
+      let watchdog;
+
+      const armWatchdog = () => {
+        clearTimeout(watchdog);
+        watchdog = setTimeout(() => {
+          status.textContent = 'Verification is taking longer than expected.';
+          retry.style.display = 'block';
+        }, 20000);
+      };
+
+      retry.addEventListener('click', () => {
+        retry.style.display = 'none';
+        status.textContent = 'Retrying verification…';
+        if (widgetId !== undefined) window.turnstile.reset(widgetId);
+        armWatchdog();
+      });
 
       const renderChallenge = () => {
         if (!sitekey) {
@@ -38,10 +58,16 @@
           return;
         }
         status.textContent = 'Complete the check below.';
-        window.turnstile.render('#turnstile-widget', {
+        widgetId = window.turnstile.render('#turnstile-widget', {
           sitekey,
           theme: 'light',
+          size: 'flexible',
+          retry: 'auto',
+          'retry-interval': 3000,
+          'refresh-expired': 'auto',
+          'refresh-timeout': 'auto',
           callback: (token) => {
+            clearTimeout(watchdog);
             status.textContent = 'Verified. Returning to FHE…';
             send({ type: 'turnstile-token', token });
           },
@@ -49,11 +75,23 @@
             status.textContent = 'The check expired. Please try again.';
             send({ type: 'turnstile-expired' });
           },
+          'timeout-callback': () => {
+            status.textContent = 'The check timed out. Please try again.';
+            retry.style.display = 'block';
+          },
+          'unsupported-callback': () => {
+            clearTimeout(watchdog);
+            status.textContent = 'This security check is not supported here. Please return to the app.';
+            send({ type: 'turnstile-error', code: 'unsupported-browser' });
+          },
           'error-callback': (code) => {
-            status.textContent = 'The check could not load. Please try again.';
+            clearTimeout(watchdog);
+            status.textContent = `The check could not finish (${code || 'unknown'}). Please try again.`;
+            retry.style.display = 'block';
             send({ type: 'turnstile-error', code });
           }
         });
+        armWatchdog();
       };
       renderChallenge();
     </script>
