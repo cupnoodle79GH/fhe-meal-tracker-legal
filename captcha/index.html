@@ -11,7 +11,7 @@
       main { width: min(360px, calc(100% - 40px)); text-align: center; }
       h1 { font-size: 24px; margin: 0 0 10px; }
       p { color: #718079; line-height: 1.5; }
-      #turnstile { display: flex; justify-content: center; min-height: 70px; margin-top: 24px; }
+      #turnstile-widget { display: flex; justify-content: center; min-height: 70px; margin-top: 24px; }
     </style>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
   </head>
@@ -19,7 +19,7 @@
     <main>
       <h1>Quick security check</h1>
       <p>This helps protect FHE accounts from automated sign-in and email abuse.</p>
-      <div id="turnstile" aria-live="polite"></div>
+      <div id="turnstile-widget" aria-live="polite"></div>
       <p id="status">Preparing verification…</p>
     </main>
     <script>
@@ -33,12 +33,12 @@
           send({ type: 'turnstile-error', code: 'missing-site-key' });
           return;
         }
-        if (!window.turnstile) {
+        if (typeof window.turnstile?.render !== 'function') {
           setTimeout(renderChallenge, 100);
           return;
         }
         status.textContent = 'Complete the check below.';
-        window.turnstile.render('#turnstile', {
+        window.turnstile.render('#turnstile-widget', {
           sitekey,
           theme: 'light',
           callback: (token) => {
