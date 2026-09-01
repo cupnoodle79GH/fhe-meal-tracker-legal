@@ -27,10 +27,24 @@
     <script>
       const status = document.getElementById('status');
       const retry = document.getElementById('retry');
-      const sitekey = new URLSearchParams(location.search).get('sitekey');
+      const params = new URLSearchParams(location.search);
+      const sitekey = params.get('sitekey');
+      const redirect = params.get('redirect');
       const send = (payload) => window.ReactNativeWebView?.postMessage(JSON.stringify(payload));
       let widgetId;
       let watchdog;
+
+      const complete = (token) => {
+        try {
+          const returnUrl = new URL(redirect || '');
+          if (returnUrl.protocol === 'fhesmealtrackerqa:' && returnUrl.hostname === 'captcha-callback') {
+            returnUrl.searchParams.set('token', token);
+            location.replace(returnUrl.toString());
+            return;
+          }
+        } catch {}
+        send({ type: 'turnstile-token', token });
+      };
 
       const armWatchdog = () => {
         clearTimeout(watchdog);
@@ -69,7 +83,7 @@
           callback: (token) => {
             clearTimeout(watchdog);
             status.textContent = 'Verified. Returning to FHE…';
-            send({ type: 'turnstile-token', token });
+            complete(token);
           },
           'expired-callback': () => {
             status.textContent = 'The check expired. Please try again.';
