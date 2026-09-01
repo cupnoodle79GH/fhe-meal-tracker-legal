@@ -37,7 +37,10 @@
       const complete = (token) => {
         try {
           const returnUrl = new URL(redirect || '');
-          if (returnUrl.protocol === 'fhesmealtrackerqa:' && returnUrl.hostname === 'captcha-callback') {
+          const isQaCallback = returnUrl.protocol === 'fhesmealtrackerqa:' &&
+            (returnUrl.hostname === 'captcha-callback' ||
+              (returnUrl.hostname === '' && returnUrl.pathname === '/captcha-callback'));
+          if (isQaCallback) {
             returnUrl.searchParams.set('token', token);
             location.replace(returnUrl.toString());
             return;
